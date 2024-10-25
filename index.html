@@ -1,72 +1,122 @@
-/* Estilos Generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography Page</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-/* Encabezado */
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
+        /* Encabezado */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
 
-/* Navegación */
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+        /* Navegación */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-/* Estilo del Main */
-main {
-    padding: 20px;
-}
+        /* Estilo del Main */
+        main {
+            padding: 20px;
+        }
 
-/* Sección de Galería */
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+        /* Sección de Galería */
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-.gallery img {
-    width: 30%;
-    margin: 10px 0;
-    border: 2px solid #333;
-    border-radius: 8px;
-    transition: transform 0.2s;
-}
+        .gallery img {
+            width: 30%;
+            margin: 10px 0;
+            border: 2px solid #333;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
 
-.gallery img:hover {
-    transform: scale(1.05);
-}
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
 
-/* Pie de Página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+        /* Pie de Página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>My Photography Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section id="gallery" class="gallery">
+            <img src="image1.jpg" alt="Photo 1">
+            <img src="image2.jpg" alt="Photo 2">
+            <img src="image3.jpg" alt="Photo 3">
+            <!-- Añade más imágenes según sea necesario -->
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my photography page. I am passionate about capturing moments that tell a story...</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out at: oscarmorelli@gmail.com</p>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 My Photography Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
