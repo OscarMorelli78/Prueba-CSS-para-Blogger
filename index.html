@@ -1,38 +1,72 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web - Inicio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <h1>Bienvenido a Mi Sitio de Fotografía</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-    <main>
-        <section>
-            <h2>Últimas Fotografías</h2>
-            <div class="gallery">
-                <img src="images/foto1.jpg" alt="Descripción de la foto 1">
-                <img src="images/foto2.jpg" alt="Descripción de la foto 2">
-                <img src="images/foto3.jpg" alt="Descripción de la foto 3">
-                <!-- Agrega más imágenes según sea necesario -->
-            </div>
-        </section>
-    </main>
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
-    <footer>
-        <p>© 2024 Tu Nombre. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo del Main */
+main {
+    padding: 20px;
+}
+
+/* Sección de Galería */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 30%;
+    margin: 10px 0;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
