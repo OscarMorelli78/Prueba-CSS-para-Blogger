@@ -1,43 +1,48 @@
+/* styles.css */
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar padding */
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color del texto */
 }
 
-/* Encabezado */
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+/* Encabezados */
+h1, h2, h3 {
+    color: #2c3e50; /* Color de los encabezados */
+    margin-bottom: 20px; /* Espacio debajo de los encabezados */
 }
 
-/* Títulos */
-h1 {
-    margin: 0;
+/* Estilos para los párrafos */
+p {
+    margin-bottom: 15px; /* Espacio debajo de los párrafos */
 }
 
-/* Contenedor de imágenes */
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 0;
+/* Enlaces */
+a {
+    color: #3498db; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
 }
 
-/* Elementos de imagen */
-.image-item {
-    margin: 10px;
-    flex: 1 0 calc(50% - 20px);
-    max-width: 500px;
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
 }
 
-/* Estilo de imágenes */
+/* Imágenes */
 img {
-    width: 100%;
-    height: auto;
+    max-width: 100%; /* Asegura que las imágenes no sobrepasen el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Color de fondo del contenedor */
     border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
 }
